@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "6904557803104d5b861bc9b4"
+  },
+  "username": "aditya",
+  "email": "patil@gmail.com",
+  "password": "pass123",
+  "createdAt": {
+    "$date": "2025-10-31T06:21:44.897Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "690455ed03104d5b861bc9b5"
+  },
+  "username": "poorva",
+  "email": "poorva@gmail.com",
+  "password": "pass123",
+  "createdAt": {
+    "$date": "2025-10-31T06:23:41.563Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69045c36073481ea05609cec"
+  },
+  "username": "ram",
+  "email": "ram@gmail.com",
+  "password": "ram123",
+  "createdAt": {
+    "$date": "2025-10-31T06:50:30.312Z"
+  }
+}]
