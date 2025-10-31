@@ -1,0 +1,600 @@
+[{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04d8"
+  },
+  "id": 1,
+  "question": "What is C++ and how does it differ from C?",
+  "answer": "C++ is a powerful, high-performance, general-purpose language that is an extension of the C language. The primary difference is that C++ is an Object-Oriented Programming (OOP) language, offering features like classes, inheritance, polymorphism, and encapsulation, which C does not. C++ is often described as 'C with Classes'."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04d9"
+  },
+  "id": 2,
+  "question": "Explain the concept of OOP and its four main pillars in C++.",
+  "answer": "OOP is a programming paradigm based on the concept of 'objects.' Its four main pillars are: **Encapsulation** (bundling data and methods), **Inheritance** (deriving properties from a base class), **Polymorphism** (one name, multiple forms), and **Abstraction** (showing only essential information)."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04da"
+  },
+  "id": 3,
+  "question": "What is the difference between a `struct` and a `class` in C++?",
+  "answer": "In C++, both `struct` and `class` define custom data types. The only difference is the **default access specifier**: members of a `class` are **private** by default, while members of a `struct` are **public** by default."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04db"
+  },
+  "id": 4,
+  "question": "What is a constructor? Name its types.",
+  "answer": "A **constructor** is a special member function of a class that is automatically invoked when an object of the class is created. Its purpose is to initialize the object. Types include: **Default**, **Parameterized**, and **Copy** constructors."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04dc"
+  },
+  "id": 5,
+  "question": "What is a destructor and when is it called?",
+  "answer": "A **destructor** is a special member function preceded by a tilde (`~`) that is automatically called when an object goes out of scope or is explicitly deleted. Its purpose is to perform cleanup, such as releasing dynamically allocated memory or closing files."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04dd"
+  },
+  "id": 6,
+  "question": "Explain the difference between call by value and call by reference.",
+  "answer": "In **Call by Value**, a copy of the actual parameter's value is passed, so changes inside the function do not affect the original variable. In **Call by Reference**, an alias (reference) to the original variable is passed, so changes inside the function *do* affect the original variable."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04de"
+  },
+  "id": 7,
+  "question": "What are 'pointers' in C++?",
+  "answer": "A **pointer** is a variable that stores the memory address of another variable. They are fundamental for dynamic memory management, implementing data structures, and achieving call-by-reference semantics."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04df"
+  },
+  "id": 8,
+  "question": "What is the use of the `new` and `delete` operators?",
+  "answer": "**`new`** is used to dynamically allocate memory on the **heap** (free store) for an object or array. **`delete`** is used to release that dynamically allocated memory back to the system, preventing memory leaks. You must use `delete[]` for arrays allocated with `new[]`."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04e0"
+  },
+  "id": 9,
+  "question": "Explain 'Encapsulation' and how it is implemented in C++.",
+  "answer": "**Encapsulation** is the binding of data (member variables) and the methods (member functions) that operate on that data into a single unit (a class). It is implemented using **access specifiers** (`public`, `private`, `protected`) to hide the internal state of an object."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04e1"
+  },
+  "id": 10,
+  "question": "What is 'Inheritance'? Name its types.",
+  "answer": "**Inheritance** is a mechanism where a new class (derived or child class) is based on an existing class (base or parent class), acquiring the properties and behaviors of the base class. Types include **Single, Multiple, Multilevel, Hierarchical, and Hybrid** inheritance."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04e2"
+  },
+  "id": 11,
+  "question": "What is a 'virtual function'?",
+  "answer": "A **virtual function** is a member function declared within a base class and overridden by a derived class. When called via a pointer or reference to the base class, it determines the function to be executed at **run-time** (late binding) based on the type of object the pointer/reference is pointing to."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04e3"
+  },
+  "id": 12,
+  "question": "What is a 'pure virtual function' and an 'abstract class'?",
+  "answer": "A **pure virtual function** is declared by assigning $0$ to it (e.g., `virtual void func() = 0;`). A class containing at least one pure virtual function is called an **abstract class**. You **cannot** create objects of an abstract class."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04e4"
+  },
+  "id": 13,
+  "question": "Explain the role of the `this` pointer.",
+  "answer": "The **`this`** pointer is an implicit, constant pointer available inside every non-static member function. It always points to the **current object** for which the function is being called, allowing access to the object's members."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04e5"
+  },
+  "id": 14,
+  "question": "What is 'Function Overloading'?",
+  "answer": "**Function Overloading** (Compile-time Polymorphism) allows defining multiple functions with the **same name** but with **different parameter lists** (different number or types of arguments) within the same scope. The compiler decides which function to call based on the arguments provided."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04e6"
+  },
+  "id": 15,
+  "question": "What is 'Operator Overloading'?",
+  "answer": "It is the ability to redefine the meaning of an operator (like $+$, $-$, $==$) for user-defined data types (classes). It allows operators to work with objects in an intuitive way, making the code more readable."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04e7"
+  },
+  "id": 16,
+  "question": "Differentiate between 'Overloading' and 'Overriding'.",
+  "answer": "**Overloading** involves having multiple functions with the same name but different signatures in the same class/scope (Compile-time polymorphism). **Overriding** involves a derived class providing a specific implementation for a function that is already defined in its base class (Run-time polymorphism, typically using `virtual` functions)."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04e8"
+  },
+  "id": 17,
+  "question": "What is the purpose of the `friend` keyword?",
+  "answer": "The **`friend`** keyword allows a function or an entire class to access the **private and protected members** of another class, thereby bypassing the normal encapsulation restrictions."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04e9"
+  },
+  "id": 18,
+  "question": "Explain 'static' members (data and functions).",
+  "answer": "**Static** members belong to the **class itself**, not to any specific object. **Static data members** are shared by all objects of the class (only one copy exists). **Static member functions** can only access static data members and other static functions of the class."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04ea"
+  },
+  "id": 19,
+  "question": "What is the Standard Template Library (STL)?",
+  "answer": "The **STL** is a collection of C++ template classes and functions that provide generic, reusable data structures and algorithms. It consists mainly of **Containers** (e.g., `vector`, `map`), **Algorithms** (e.g., `sort`, `find`), and **Iterators**."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04eb"
+  },
+  "id": 20,
+  "question": "Differentiate between `std::vector` and a C-style `array`.",
+  "answer": "A C-style **`array`** has a fixed size determined at compile time and is managed manually. A **`std::vector`** is a dynamic array (a container in STL) that can dynamically grow or shrink its size at run-time, managing memory allocation on the heap automatically. `std::vector` is safer and more flexible."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04ec"
+  },
+  "id": 21,
+  "question": "What is the purpose of `std::map`?",
+  "answer": "**`std::map`** is an ordered associative container that stores elements in **key-value** pairs. It uses a self-balancing Binary Search Tree (typically a Red-Black Tree) to keep keys sorted, enabling fast retrieval ($O(\\log n)$)."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04ed"
+  },
+  "id": 22,
+  "question": "What is an 'iterator' in STL?",
+  "answer": "An **iterator** is an object that acts like a pointer, providing a way to access the elements of an STL container sequentially. It generalizes the concept of a pointer so that different data structures can be traversed in a uniform manner."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04ee"
+  },
+  "id": 23,
+  "question": "Explain 'Template Programming'.",
+  "answer": "**Templates** allow functions and classes to operate on generic types without being rewritten for each specific type. They enable **generic programming**. The compiler generates type-specific code for the templates at compile time based on the arguments provided (a concept known as **template instantiation**)."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04ef"
+  },
+  "id": 24,
+  "question": "What are 'Exception Handling' keywords in C++?",
+  "answer": "Exception handling is managed by three keywords: **`try`** (encloses the code that might throw an exception), **`throw`** (used to signal an exception), and **`catch`** (used to handle the exception thrown by the `try` block)."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04f0"
+  },
+  "id": 25,
+  "question": "What is 'RAII' (Resource Acquisition Is Initialization)?",
+  "answer": "**RAII** is a C++ programming idiom that ties the lifespan of a resource (like dynamically allocated memory, file handles, locks) to the lifespan of a **stack-based object**. The resource is acquired in the object's constructor and automatically released in the object's **destructor**."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04f1"
+  },
+  "id": 26,
+  "question": "What are 'Smart Pointers' and why are they used?",
+  "answer": "**Smart pointers** (`std::unique_ptr`, `std::shared_ptr`, `std::weak_ptr`) are class templates that wrap raw pointers, automatically managing the memory they point to. They are used to prevent memory leaks and dangling pointers by implementing the **RAII** principle."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04f2"
+  },
+  "id": 27,
+  "question": "Differentiate between `std::unique_ptr` and `std::shared_ptr`.",
+  "answer": "**`std::unique_ptr`** owns the resource **exclusively** (only one unique pointer can point to the resource at a time). **`std::shared_ptr`** uses a **reference counter** to allow multiple shared pointers to own the same resource; the resource is deleted only when the last shared pointer goes out of scope."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04f3"
+  },
+  "id": 28,
+  "question": "What is 'move semantics' (Rvalue references)?",
+  "answer": "Introduced in C++11, **move semantics** allow resources (like large buffers) to be *moved* from one object to another instead of being deep-copied. This is achieved using **Rvalue references** (`&&`), which bind to temporary, unnamed objects, significantly improving performance."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04f4"
+  },
+  "id": 29,
+  "question": "What is a 'lambda expression' in C++?",
+  "answer": "A **lambda expression** is an anonymous function object capable of capturing variables from its surrounding scope. It provides a concise way to create callable objects, often used for algorithms and concurrent programming. Example: `auto add = [](int a, int b){ return a + b; };`."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04f5"
+  },
+  "id": 30,
+  "question": "Explain the concept of 'V-table' and 'V-ptr'.",
+  "answer": "The **V-table (Virtual Table)** is a static array created by the compiler for a class that contains virtual functions. The **V-ptr (Virtual Pointer)** is a hidden pointer added to every object of a class with virtual functions, which points to the class's V-table. This mechanism enables run-time polymorphism."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04f6"
+  },
+  "id": 31,
+  "question": "What are 'Namespaces'?",
+  "answer": "**Namespaces** are used to organize code into logical groups and prevent naming conflicts (name collisions) that can occur when combining multiple libraries. `std` is the Standard C++ Library namespace."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04f7"
+  },
+  "id": 32,
+  "question": "When should you use `const`?",
+  "answer": "**`const`** is used to declare variables that cannot be changed. It should also be used: 1. On function parameters to prevent modification, 2. On member functions to guarantee they won't modify the object's state (const correctness), and 3. On pointers/references for read-only access."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04f8"
+  },
+  "id": 33,
+  "question": "What is the difference between `i++` and `++i`?",
+  "answer": "**`++i`** (pre-increment) increments the value of $i$ and then returns the **new** value (more efficient). **`i++`** (post-increment) returns the **original** value of $i$ and *then* increments $i$. Pre-increment is generally preferred for objects/iterators."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04f9"
+  },
+  "id": 34,
+  "question": "What is the 'Rule of Three/Five' in C++?",
+  "answer": "The **Rule of Three** states that if a class defines a destructor, a copy constructor, or a copy assignment operator, it should define all three. The **Rule of Five** (C++11 onwards) extends this to include the **move constructor** and **move assignment operator**."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04fa"
+  },
+  "id": 35,
+  "question": "What is the purpose of the `explicit` keyword on a constructor?",
+  "answer": "The **`explicit`** keyword prevents the compiler from using that constructor for **implicit type conversions**. This is crucial for preventing unexpected conversions that can lead to subtle bugs."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04fb"
+  },
+  "id": 36,
+  "question": "What are 'Forward Declarations' and when are they useful?",
+  "answer": "A **forward declaration** is a declaration of an identifier (e.g., a class, function) before its full definition. It's useful to reduce compilation time and avoid circular dependencies by including only necessary information (like the class name) rather than the full header file."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04fc"
+  },
+  "id": 37,
+  "question": "Differentiate between `include \"file.h\"` and `include <file.h>`.",
+  "answer": "The first form, **`\"file.h\"`**, typically searches for the header file in the current source directory and then in standard system directories (used for user-defined headers). The second form, **`<file.h>`**, only searches in the standard system directories (used for standard library headers)."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04fd"
+  },
+  "id": 38,
+  "question": "What are 'Storage Class Specifiers' in C++?",
+  "answer": "They define the scope (visibility) and lifetime of variables and functions. Common specifiers include **`auto`** (repurposed in C++11), **`register`**, **`static`**, **`extern`**, and **`mutable`**."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04fe"
+  },
+  "id": 39,
+  "question": "What is 'dangling pointer'?",
+  "answer": "A **dangling pointer** is a pointer that points to a memory location that has been deallocated (deleted). Accessing a dangling pointer results in **undefined behavior**."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc04ff"
+  },
+  "id": 40,
+  "question": "What is a 'memory leak'?",
+  "answer": "A **memory leak** occurs when dynamically allocated memory on the heap is no longer reachable by the program (the pointer to it is lost) but has not been deallocated using `delete`. This reserved memory reduces available system memory."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0500"
+  },
+  "id": 41,
+  "question": "Explain 'Shallow Copy' and 'Deep Copy'.",
+  "answer": "A **Shallow Copy** copies only the member variables' values, which means if a member is a pointer, only the pointer address is copied, leading to shared memory. A **Deep Copy** allocates new memory for the pointed-to data and copies the content, making the objects independent."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0501"
+  },
+  "id": 42,
+  "question": "When would you use `std::list` over `std::vector`?",
+  "answer": "You would use **`std::list`** (a doubly-linked list) when you have frequent **insertions and deletions** anywhere in the sequence, as these operations are $O(1)$. **`std::vector`** is better for random access ($O(1)$) and cache locality."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0502"
+  },
+  "id": 43,
+  "question": "What is the purpose of the `const_cast` operator?",
+  "answer": "**`const_cast`** is a type casting operator used to **add or remove the `const` or `volatile` qualifiers** from a variable. It should be used cautiously to interface with older libraries that aren't const-correct."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0503"
+  },
+  "id": 44,
+  "question": "What is 'multiple inheritance' and its potential problem?",
+  "answer": "**Multiple Inheritance** is when a class inherits from more than one base class. The main problem is the **Diamond Problem**, where a class inherits from two classes that share a common ancestor, leading to ambiguity when accessing members of the common ancestor."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0504"
+  },
+  "id": 45,
+  "question": "How do you resolve the Diamond Problem?",
+  "answer": "The Diamond Problem is resolved using **Virtual Inheritance** by specifying the common base class as `virtual` in the inheritance list of the intermediate classes (e.g., `class B : virtual public A`). This ensures only one instance of the common base class exists."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0505"
+  },
+  "id": 46,
+  "question": "What is a 'reference variable'?",
+  "answer": "A **reference variable** is an **alias** (another name) for an already existing variable. It must be initialized at the time of declaration, cannot be changed later, and is often used for safe call-by-reference without the pointer syntax."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0506"
+  },
+  "id": 47,
+  "question": "What is the advantage of using `constexpr`?",
+  "answer": "**`constexpr`** (C++11) indicates that a variable or function can be evaluated **at compile time**. This enables optimizations and allows the result to be used where a constant expression is required (e.g., array dimensions, template arguments)."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0507"
+  },
+  "id": 48,
+  "question": "Explain the difference between a `class` template and a `function` template.",
+  "answer": "A **function template** is a single definition for a set of functions that operate on different data types. A **class template** is a blueprint for creating a family of related classes that can operate on different data types (like `std::vector<T>`)."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0508"
+  },
+  "id": 49,
+  "question": "What are 'User-Defined Literals' (UDL)?",
+  "answer": "UDLs (C++11) allow users to create custom suffixes for literals. They extend the language by defining how values with a specific suffix are interpreted. Example: `50km` instead of `Kilometers(50)`."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0509"
+  },
+  "id": 50,
+  "question": "How are threads handled in modern C++?",
+  "answer": "Modern C++ (C++11 onwards) provides built-in support for concurrency through the **`std::thread`** class in the `<thread>` header. **`std::mutex`**, **`std::condition_variable`**, and **`std::future`/`std::async`** are used for synchronization and task management."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc050a"
+  },
+  "id": 51,
+  "question": "What is a 'Forward Iterator'?",
+  "answer": "A **Forward Iterator** is an STL iterator that can only move in one direction (forward) and supports reading and writing (or just reading). It can only perform single-pass algorithms."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc050b"
+  },
+  "id": 52,
+  "question": "What is `std::set` and what is its time complexity for insertion?",
+  "answer": "**`std::set`** is an associative container that stores unique elements in a specific **sorted order**. It is typically implemented using a Red-Black Tree. Insertion, deletion, and search all have a time complexity of **$O(\\log n)$**."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc050c"
+  },
+  "id": 53,
+  "question": "Differentiate between `std::map` and `std::unordered_map`.",
+  "answer": "**`std::map`** stores key-value pairs in **sorted order** (using a tree), with $O(\\log n)$ lookup time. **`std::unordered_map`** stores pairs in an **unordered** fashion (using a hash table), with average $O(1)$ lookup time, but $O(n)$ in the worst case (hash collisions)."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc050d"
+  },
+  "id": 54,
+  "question": "What is the `auto` keyword (C++11)?",
+  "answer": "The **`auto`** keyword instructs the compiler to automatically deduce the type of a variable from its initializer. It improves code readability, especially with complex iterator or template types. Example: `auto it = my_vec.begin();`."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc050e"
+  },
+  "id": 55,
+  "question": "What is a 'pure function' in the context of C++?",
+  "answer": "A **pure function** is a function that, given the same inputs, will always return the same output, and has **no side effects** (it does not modify global state, input parameters, or perform I/O). This is a concept aiding in concurrency and testing."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc050f"
+  },
+  "id": 56,
+  "question": "What is 'Casting' in C++? Name the four modern cast operators.",
+  "answer": "**Casting** is the process of converting a value of one data type into another. The four C++ cast operators are: **`static_cast`**, **`dynamic_cast`**, **`const_cast`**, and **`reinterpret_cast`**. They replace the unsafe C-style cast."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0510"
+  },
+  "id": 57,
+  "question": "When do you use `static_cast`?",
+  "answer": "**`static_cast`** is primarily used for **non-polymorphic conversions**, such as converting between related types (e.g., `int` to `float` or explicit upcasting/downcasting in non-virtual inheritance hierarchies). It is checked at compile time."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0511"
+  },
+  "id": 58,
+  "question": "When do you use `dynamic_cast`?",
+  "answer": "**`dynamic_cast`** is used for **run-time type checking** and safe downcasting (base class pointer to derived class pointer) in **polymorphic** class hierarchies (classes with at least one virtual function). It returns `nullptr` if the cast fails."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0512"
+  },
+  "id": 59,
+  "question": "What is the purpose of the `volatile` keyword?",
+  "answer": "The **`volatile`** keyword informs the compiler that a variable's value may be changed by external factors (e.g., hardware, another thread). This prevents the compiler from performing aggressive optimizations (like caching the value in a register) that would assume the value is constant."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0513"
+  },
+  "id": 60,
+  "question": "How do you prevent a class from being inherited?",
+  "answer": "In C++11 and later, you use the keyword **`final`** after the class name (e.g., `class MyClass final {...}`)."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0514"
+  },
+  "id": 61,
+  "question": "Explain the difference between `NULL` and `nullptr`.",
+  "answer": "**`NULL`** is typically a preprocessor macro defined as $0$. **`nullptr`** (C++11) is a **keyword** that is a distinct type (`std::nullptr_t`) used specifically to represent a null pointer value, preventing ambiguity and implicit conversion errors that `NULL` can cause."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0515"
+  },
+  "id": 62,
+  "question": "What is the 'Reference Collapsing Rule'?",
+  "answer": "Part of C++11's move semantics, the rule dictates how lvalue references (`&`) and rvalue references (`&&`) combine in template deduction. The key rule is that if either reference is an lvalue reference, the result is an lvalue reference, critical for **perfect forwarding**."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0516"
+  },
+  "id": 63,
+  "question": "What is the purpose of the `noexcept` specifier?",
+  "answer": "The **`noexcept`** specifier (C++11) indicates that a function is guaranteed **not to throw any exceptions**. It allows the compiler to perform performance optimizations by skipping exception-handling overhead (if a `noexcept` function throws, the program is immediately terminated)."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0517"
+  },
+  "id": 64,
+  "question": "How is 'Abstraction' achieved in C++?",
+  "answer": "Abstraction is achieved mainly through **Abstract Classes** (containing pure virtual functions) and by designing classes that expose a minimal public interface while hiding complex implementation details via private/protected members."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0518"
+  },
+  "id": 65,
+  "question": "What is a 'Functor' (Function Object)?",
+  "answer": "A **Functor** is an object of a class that **overloads the function call operator (`operator()`)**. This allows the object to be treated and used as if it were a function, and crucially, they can maintain state between calls."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0519"
+  },
+  "id": 66,
+  "question": "What is the use of `std::array` (C++11)?",
+  "answer": "**`std::array`** is a container that provides a **fixed-size, non-dynamic array** (like a C-style array) but with the benefits of STL containers, such as iterators, size checking, and being assignable. Storage is typically on the stack."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc051a"
+  },
+  "id": 67,
+  "question": "Explain the concept of 'Placement New'.",
+  "answer": "**Placement New** is an overloaded form of the `new` operator that allows you to construct an object at a **pre-allocated, specified memory location**. This is used for memory pools or performance-critical embedded systems where allocation overhead must be avoided."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc051b"
+  },
+  "id": 68,
+  "question": "What is 'Tag Dispatching' in C++?",
+  "answer": "**Tag Dispatching** is a template programming technique used to select one of several overloaded functions or template specializations based on a 'tag' (a lightweight, empty structure). It's used by STL to optimize algorithms based on iterator capabilities."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc051c"
+  },
+  "id": 69,
+  "question": "What is the difference between an **`extern`** and a **`static`** global variable?",
+  "answer": "An **`extern`** global variable is accessible across **multiple files** (external linkage). A **`static`** global variable has **internal linkage**, meaning it is only accessible within the **file where it is defined**."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc051d"
+  },
+  "id": 70,
+  "question": "What are 'Rvalue' and 'Lvalue'?",
+  "answer": "An **Lvalue** (Locator Value) is an expression that identifies a memory location (can appear on the left side of an assignment). An **Rvalue** (Right Value) is a temporary, non-addressable value that can only appear on the right side of an assignment (e.g., literals, temporary objects)."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc051e"
+  },
+  "id": 71,
+  "question": "How do you prevent 'v-table bloating'?",
+  "answer": "V-table bloating can be mitigated by: 1. Avoiding making functions virtual unless runtime polymorphism is needed. 2. Using the `final` keyword where inheritance is not intended. 3. Preferring non-member, non-friend functions where appropriate to reduce class size."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc051f"
+  },
+  "id": 72,
+  "question": "Explain the purpose of the `std::forward` utility.",
+  "answer": "**`std::forward`** (C++11) is a utility used for **perfect forwarding** arguments within template functions. It preserves the value category (lvalue or rvalue) of the original argument, ensuring that if an rvalue was passed, it is forwarded as an rvalue, enabling move semantics further down the call chain."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0520"
+  },
+  "id": 73,
+  "question": "What is the main benefit of using `auto` as a function return type (C++14)?",
+  "answer": "The main benefit is for **template functions** or functions with complex return types. It allows the compiler to deduce the return type, improving code conciseness and correctness, especially when the type depends on template parameters."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0521"
+  },
+  "id": 74,
+  "question": "What is the `override` specifier (C++11) and why is it used?",
+  "answer": "The **`override`** specifier is used on a member function declaration in a derived class to explicitly state that the function is intended to override a virtual function in the base class. It is used to prevent subtle bugs where a signature mismatch prevents true overriding."
+},
+{
+  "_id": {
+    "$oid": "690197fb0f237e9cc8dc0522"
+  },
+  "id": 75,
+  "question": "What is the primary difference between `std::thread::join()` and `std::thread::detach()`?",
+  "answer": "**`join()`** causes the calling thread to block until the target thread finishes execution (waits for the thread). **`detach()`** separates the target thread from the thread object, allowing it to run in the background as a daemon thread (the program must not terminate before the detached thread finishes)."
+}]
