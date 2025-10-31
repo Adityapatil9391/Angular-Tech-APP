@@ -1,0 +1,600 @@
+[{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebece2"
+  },
+  "id": 1,
+  "question": "What is a botnet?",
+  "answer": "A botnet is a network of internet-connected devices (like computers, smartphones, and IoT devices) that have been secretly infected with malicious software (malware) and are controlled as a group by a single attacking party, known as a 'bot-herder'."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebece3"
+  },
+  "id": 2,
+  "question": "What is an individual compromised device in a botnet called?",
+  "answer": "Each individual compromised device is referred to as a **bot** or a **zombie computer**."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebece4"
+  },
+  "id": 3,
+  "question": "What does C&C stand for in the context of botnets?",
+  "answer": "**Command and Control (C&C)**, which is the server infrastructure the bot-herder uses to issue remote instructions to all the bots."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebece5"
+  },
+  "id": 4,
+  "question": "Name the two main architectural models for botnets.",
+  "answer": "The two main models are the **Client-Server model** (centralized) and the **Peer-to-Peer (P2P) model** (decentralized)."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebece6"
+  },
+  "id": 5,
+  "question": "What is the most common and damaging attack launched by large botnets?",
+  "answer": "The most common and impactful attack is the **Distributed Denial-of-Service (DDoS)** attack."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebece7"
+  },
+  "id": 6,
+  "question": "How does a DDoS attack work using a botnet?",
+  "answer": "The botnet floods a target server or network with an overwhelming amount of traffic from multiple sources simultaneously, making it unavailable to legitimate users."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebece8"
+  },
+  "id": 7,
+  "question": "Name three malicious activities, besides DDoS, that botnets are used for.",
+  "answer": "Common malicious uses include **Spam Distribution**, **Credential Theft** (e.g., brute force attacks), and **Click Fraud**."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebece9"
+  },
+  "id": 8,
+  "question": "What is 'Cryptojacking' in relation to botnets?",
+  "answer": "It's the use of a botnet's collective processing power to mine cryptocurrencies without the device owner's knowledge or consent."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecea"
+  },
+  "id": 9,
+  "question": "What is a common initial infection vector used to create a bot?",
+  "answer": "**Phishing** emails containing malicious links or attachments, and exploiting **unpatched software vulnerabilities** are extremely common methods."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebeceb"
+  },
+  "id": 10,
+  "question": "Which specific category of devices is a frequent target due to poor security?",
+  "answer": "**Internet of Things (IoT)** devices, such as smart cameras and routers, are frequently targeted for botnet recruitment."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecec"
+  },
+  "id": 11,
+  "question": "What is one tell-tale sign that a device may be part of a botnet?",
+  "answer": "An unexplained **slowdown in system or internet performance**, or an unusual spike in **network traffic or CPU activity** are key indicators."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebeced"
+  },
+  "id": 12,
+  "question": "What makes P2P botnets more resilient to takedown efforts?",
+  "answer": "They lack a single, centralized C2 server to shut down, as command functionality is distributed across many interconnected bots."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecee"
+  },
+  "id": 13,
+  "question": "What is 'Botnet-as-a-Service' (BaaS)?",
+  "answer": "It is the practice of bot-herders renting out their botnet infrastructure to other cybercriminals on the dark web for a fee."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecef"
+  },
+  "id": 14,
+  "question": "What is a 'bot-herder'?",
+  "answer": "The malicious actor or party that remotely controls the network of compromised devices (the botnet)."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecf0"
+  },
+  "id": 15,
+  "question": "What is a crucial user defense mechanism against botnet infection?",
+  "answer": "**Keeping all operating systems and applications updated** with the latest security patches to close vulnerabilities."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecf1"
+  },
+  "id": 16,
+  "question": "What is a 'Brute Force' attack in the context of botnets?",
+  "answer": "It's an attack where a botnet systematically attempts many username/password combinations to guess credentials and gain unauthorized access to accounts."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecf2"
+  },
+  "id": 17,
+  "question": "Name a famous botnet that primarily targeted IoT devices.",
+  "answer": "The **Mirai botnet** (active since 2016) is a famous example known for infecting insecure IoT devices."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecf3"
+  },
+  "id": 18,
+  "question": "How does a botnet 'spread' passively?",
+  "answer": "It spreads when a user is tricked into initiating the infection, often by clicking a malicious link or downloading an infected file (e.g., via spam or phishing)."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecf4"
+  },
+  "id": 19,
+  "question": "What is 'Domain Generation Algorithm' (DGA)?",
+  "answer": "A technique used by advanced botnet malware to randomly generate new C&C domain names, making it harder for security teams to block communication."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecf5"
+  },
+  "id": 20,
+  "question": "What kind of data theft can botnets facilitate from infected systems?",
+  "answer": "They can facilitate the theft of personal data, financial information, login credentials, and intellectual property."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecf6"
+  },
+  "id": 21,
+  "question": "Is it possible for a botnet to be used for non-malicious tasks?",
+  "answer": "While the term 'botnet' is usually malicious, the underlying concept of a distributed network of automated 'bots' can be used for benign tasks like managing online chatrooms."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecf7"
+  },
+  "id": 22,
+  "question": "How does multi-factor authentication (MFA) help prevent botnet use?",
+  "answer": "MFA complicates credential theft, as even if a botnet steals a password, it usually cannot bypass the second verification factor."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecf8"
+  },
+  "id": 23,
+  "question": "What is a 'zombie' attack?",
+  "answer": "The term is sometimes used to refer to any malicious attack launched by compromised, or 'zombie,' devices within a botnet."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecf9"
+  },
+  "id": 24,
+  "question": "Can botnet malware operate without the device owner's knowledge?",
+  "answer": "Yes, advanced botnet malware is engineered to operate covertly in the background to evade detection."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecfa"
+  },
+  "id": 25,
+  "question": "What role does a botnet play in large-scale phishing campaigns?",
+  "answer": "It provides the scale, sending out massive volumes of phishing emails quickly and widely from thousands of compromised IPs, making spam filtering difficult."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecfb"
+  },
+  "id": 26,
+  "question": "What network anomaly might indicate botnet activity on a network?",
+  "answer": "Unusual network traffic patterns, such as regular 'heartbeat' signals, or connections to suspicious, unknown external IP addresses."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecfc"
+  },
+  "id": 27,
+  "question": "Why is the spread of IoT devices a major concern for botnets?",
+  "answer": "The large number of poorly secured IoT devices provides a vast and growing pool of easily compromised targets for botnet recruitment."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecfd"
+  },
+  "id": 28,
+  "question": "What happens if a bot-herder loses control of their C&C server in a Client-Server model?",
+  "answer": "The entire botnet can be effectively disabled, as the bots can no longer receive instructions. This is a weakness of centralized models."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecfe"
+  },
+  "id": 29,
+  "question": "What is 'SEO Poisoning' as a botnet attack?",
+  "answer": "Bots simulate search engine traffic to artificially boost the ranking of malicious websites, which then distribute malware to unsuspecting visitors."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebecff"
+  },
+  "id": 30,
+  "question": "What does a botnet malware need to achieve **persistence** on a device?",
+  "answer": "It needs to establish mechanisms that allow it to survive system reboots and basic security scans, ensuring it remains active on the device."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed00"
+  },
+  "id": 31,
+  "question": "Can antivirus software detect and remove botnet malware?",
+  "answer": "Yes, reputable and up-to-date antivirus and anti-malware software is designed to detect, quarantine, and remove many forms of botnet malware."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed01"
+  },
+  "id": 32,
+  "question": "What is a 'proxy botnet'?",
+  "answer": "A botnet whose infected devices are used to relay traffic, helping the attacker hide their original IP address and evade attribution."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed02"
+  },
+  "id": 33,
+  "question": "Why are botnets effective for large-scale financial fraud?",
+  "answer": "They automate the process of creating fake accounts, conducting fraudulent transactions, and stealing financial data across many compromised endpoints."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed03"
+  },
+  "id": 34,
+  "question": "What is the primary way to remove a botnet infection from a home router?",
+  "answer": "The most common and effective method is to **reset the device to factory settings** and immediately change the default administrative password to a strong, unique one."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed04"
+  },
+  "id": 35,
+  "question": "What are 'keyloggers' and how are they used in a botnet?",
+  "answer": "Keyloggers are a type of malware that record keystrokes; they are deployed by a botnet to capture and steal login credentials and sensitive data entered by the user."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed05"
+  },
+  "id": 36,
+  "question": "What is the primary motivation for creating most malicious botnets?",
+  "answer": "The primary motivation is **financial gain**, whether through direct theft, selling stolen data, ad fraud, or renting the botnet service."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed06"
+  },
+  "id": 37,
+  "question": "How can an organization use traffic monitoring to detect a botnet infection?",
+  "answer": "By looking for anomalies like unusual spikes in outgoing data or unexpected connections to foreign IPs that deviate from baseline traffic patterns."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed07"
+  },
+  "id": 38,
+  "question": "What is the 'infection' stage of a botnet's life cycle?",
+  "answer": "The stage where the target device is compromised and the botnet malware is installed, turning the device into a controlled 'bot'."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed08"
+  },
+  "id": 39,
+  "question": "What type of botnet primarily uses the Internet Relay Chat (IRC) protocol for C&C?",
+  "answer": "The older, traditional **IRC botnets**, which communicate commands through channels on a dedicated IRC server."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed09"
+  },
+  "id": 40,
+  "question": "Why is it harder to detect botnet traffic compared to traditional viruses?",
+  "answer": "Botnet traffic often uses small, encrypted, and sporadic communications that can easily be blended in with legitimate network activity."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed0a"
+  },
+  "id": 41,
+  "question": "How does a botnet facilitate 'scalping' attacks?",
+  "answer": "Bots are used to purchase a large number of limited-supply items (like event tickets) much faster than human users, which the bot-herder can then resell at a markup."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed0b"
+  },
+  "id": 42,
+  "question": "What is one way a botnet can steal money without using DDoS or Cryptojacking?",
+  "answer": "By performing **loyalty fraud**, where bots automate the creation of multiple fake accounts to earn and sell rewards or loyalty points."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed0c"
+  },
+  "id": 43,
+  "question": "What is a major risk of using a simple, default password on an IoT device?",
+  "answer": "The device can be easily compromised by automated botnet scanners and quickly recruited into the botnet, often within minutes of being connected to the internet."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed0d"
+  },
+  "id": 44,
+  "question": "What is the purpose of 'anti-analysis' measures in advanced botnet malware?",
+  "answer": "These techniques are designed to detect if the malware is being run in a virtual or secure environment by a security analyst, and if so, it will refuse to execute its malicious payload."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed0e"
+  },
+  "id": 45,
+  "question": "What specific security principle is violated when an organization's device becomes a bot?",
+  "answer": "The device's **integrity** is violated, as its intended function is subverted to perform the attacker's malicious commands."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed0f"
+  },
+  "id": 46,
+  "question": "How can training employees help prevent botnet attacks?",
+  "answer": "User awareness training teaches staff how to identify and avoid falling victim to phishing and social engineering, which are primary infection vectors."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed10"
+  },
+  "id": 47,
+  "question": "What is the difference between a Worm and a Botnet in terms of objective?",
+  "answer": "A **Worm**'s primary objective is to self-replicate and spread, while a **Botnet**'s objective is to form a remote-controlled army for centralized attack execution."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed11"
+  },
+  "id": 48,
+  "question": "What happens in the 'mobilize' or 'activate' stage of a botnet attack?",
+  "answer": "The bot-herder issues a command through the C&C infrastructure, instructing the entire network of bots to launch a coordinated attack against a target."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed12"
+  },
+  "id": 49,
+  "question": "What security practice involves assuming that security threats already exist within your enterprise network?",
+  "answer": "**Zero Trust** architecture, which minimizes the damage a single compromised bot could do by requiring continuous verification for every user and device."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed13"
+  },
+  "id": 50,
+  "question": "Can a botnet be used for industrial espionage?",
+  "answer": "Yes, by compromising industrial IoT devices or corporate computers, a botnet can be used to monitor and exfiltrate valuable industrial data and intellectual property."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed14"
+  },
+  "id": 51,
+  "question": "What is 'Polyphormic Code' in botnet malware?",
+  "answer": "Code that constantly changes its physical appearance to evade detection by signature-based antivirus software."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed15"
+  },
+  "id": 52,
+  "question": "What are 'Trojans' and how are they used to create a botnet?",
+  "answer": "Trojans (Trojan Horses) are deceptive malware that appear as legitimate software but secretly carry the botnet malware payload, which is installed when the user runs the seemingly benign program."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed16"
+  },
+  "id": 53,
+  "question": "Why do botnets often target Linux servers in addition to Windows PCs?",
+  "answer": "Linux is widely used for web servers and other infrastructure. Compromising these allows for high-bandwidth attacks and access to valuable data."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed17"
+  },
+  "id": 54,
+  "question": "How does a botnet's scale benefit a cybercriminal?",
+  "answer": "Scale allows the criminal to launch more effective and destructive attacks (like DDoS), send massive volumes of spam, and make their C&C infrastructure harder to locate and dismantle."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed18"
+  },
+  "id": 55,
+  "question": "What is the primary defensive benefit of network segmentation against botnets?",
+  "answer": "Segmentation limits the botnet's ability to spread laterally and infect other devices after it has initially compromised one point on the network."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed19"
+  },
+  "id": 56,
+  "question": "What is the role of **Ransom** in botnet monetization?",
+  "answer": "A bot-herder may launch a crippling attack (like a DDoS) and then demand a ransom payment from the victim in exchange for halting the attack."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed1a"
+  },
+  "id": 57,
+  "question": "What type of attack involves the botnet injecting malicious code into legitimate software distribution channels?",
+  "answer": "**Supply Chain Attacks**, where the botnet malware is distributed via trusted updates or software packages."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed1b"
+  },
+  "id": 58,
+  "question": "What is one way to detect a botnet by monitoring DNS queries?",
+  "answer": "By identifying an unusual volume or frequency of DNS requests to domains that are known to be malicious or newly generated (often via DGA)."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed1c"
+  },
+  "id": 59,
+  "question": "Can mobile devices like smartphones be part of a botnet?",
+  "answer": "Yes, **Mobile Botnets** specifically target Android and iOS devices, often through malicious apps or links, using them for activities like SMS fraud or data theft."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed1d"
+  },
+  "id": 60,
+  "question": "What does a botnet do to a computer's firewall?",
+  "answer": "The malware installed by the botnet may attempt to disable, bypass, or open backdoors in the host device's local firewall to ensure C&C communication is uninterrupted."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed1e"
+  },
+  "id": 61,
+  "question": "How do botnets make use of compromised social media accounts?",
+  "answer": "They use them to spread spam, phishing links, and disinformation, leveraging the accounts' legitimacy to trick other users."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed1f"
+  },
+  "id": 62,
+  "question": "What is the key difference between a botnet and a **logic bomb**?",
+  "answer": "A **Botnet** is a remote-controlled network, while a **Logic Bomb** is a dormant piece of malware that only activates when a specific condition (a 'logic') is met."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed20"
+  },
+  "id": 63,
+  "question": "What does 'web scraping' have to do with botnets?",
+  "answer": "Botnets can be used to perform **massive, automated web scraping**, rapidly extracting large amounts of data from websites, often violating terms of service."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed21"
+  },
+  "id": 64,
+  "question": "Why are botnets considered a more dangerous threat than single-instance malware?",
+  "answer": "Their **coordinated, distributed nature** allows them to bypass simple security measures and launch attacks with a scale and impact that a single machine cannot achieve."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed22"
+  },
+  "id": 65,
+  "question": "What is the risk of keeping a router or other IoT device on its default admin credentials?",
+  "answer": "The device is highly susceptible to automated dictionary or brute force attacks from botnet malware, leading to quick compromise and recruitment."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed23"
+  },
+  "id": 66,
+  "question": "What is a 'Socks5Systemz' botnet?",
+  "answer": "An example of a malicious **Proxy Botnet** that uses compromised devices to create a network of proxies, often sold to other criminals to hide their activities."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed24"
+  },
+  "id": 67,
+  "question": "What does 'adaptive authentication' mean in botnet defense?",
+  "answer": "It is a security measure where the level of authentication required changes based on the risk profile of the user's connection, helping detect bot-like, non-human behavior."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed25"
+  },
+  "id": 68,
+  "question": "What is a major challenge in legally fighting international botnet operations?",
+  "answer": "Jurisdictional issues, as the bot-herder, C&C servers, and bots are often spread across multiple countries with different cybercrime laws."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed26"
+  },
+  "id": 69,
+  "question": "What is the primary goal of the 'Prep and Expose' stage of botnet creation?",
+  "answer": "To identify and exploit vulnerabilities in target systems to expose them to the botnet malware."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed27"
+  },
+  "id": 70,
+  "question": "How can an organization use a **sandbox** to analyze botnet malware?",
+  "answer": "A sandbox is an isolated virtual environment where suspicious programs can be run and observed safely without risk to the production network, allowing analysis of the malware's C&C communication."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed28"
+  },
+  "id": 71,
+  "question": "What is the risk of a botnet stealing a company's intellectual property?",
+  "answer": "It can lead to significant financial loss, loss of competitive edge, and potential legal or regulatory issues for the victim company."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed29"
+  },
+  "id": 72,
+  "question": "What is a 'Fast Flux' technique in botnet C&C?",
+  "answer": "A technique where the C&C server constantly rotates its IP address among many different compromised host machines (the bots) using rapidly changing DNS records, making it extremely difficult to shut down."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed2a"
+  },
+  "id": 73,
+  "question": "What does a botnet do to a device's available bandwidth?",
+  "answer": "It consumes a significant portion of the device's uplink bandwidth to send spam, launch attacks, or transfer stolen data back to the C&C server."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed2b"
+  },
+  "id": 74,
+  "question": "What is the difference in control between a P2P botnet and a Client-Server botnet?",
+  "answer": "A **Client-Server** model is hierarchical with a central server, while a **P2P** model has all bots communicating with and controlling each other, lacking a single point of failure."
+},
+{
+  "_id": {
+    "$oid": "69033eacdd38e65b96ebed2c"
+  },
+  "id": 75,
+  "question": "What is a simple, non-software defense against an IoT botnet infection?",
+  "answer": "Physically **disabling UPnP (Universal Plug and Play)** on your router, as many IoT botnets exploit this protocol for initial infection or lateral movement."
+}]
