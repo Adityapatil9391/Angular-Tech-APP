@@ -1,0 +1,616 @@
+[{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc0489"
+  },
+  "id": 1,
+  "question": "What is Python and what are its key features?",
+  "answer": "Python is an interpreted, high-level, general-purpose programming language. Its key features include being dynamically typed, supporting multiple programming paradigms (procedural, object-oriented, functional), having a vast standard library, and emphasizing code readability."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc048a"
+  },
+  "id": 2,
+  "question": "Differentiate between a list and a tuple in Python.",
+  "answer": "The main difference is mutability: a **list** is **mutable** (its elements can be changed, added, or removed), while a **tuple** is **immutable** (once created, its elements cannot be changed). Lists are defined using square brackets `[]`, and tuples use parentheses `()`."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc048b"
+  },
+  "id": 3,
+  "question": "Explain the use of the `self` keyword in Python classes.",
+  "answer": "The `self` keyword is a convention (not a hard requirement) that acts as the first parameter to an instance method. It is a reference to the **instance** of the class, allowing you to access and modify the instance's attributes and methods from within the class."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc048c"
+  },
+  "id": 4,
+  "question": "What is PEP 8?",
+  "answer": "**PEP 8** is the style guide for Python code. It provides conventions on how to write Python code to ensure it is highly readable and consistent across the Python community. Examples include rules for indentation, naming conventions, and line length."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc048d"
+  },
+  "id": 5,
+  "question": "What are Python 'decorators'?",
+  "answer": "A **decorator** is a design pattern that allows a user to modify or extend the functionality of a function or method without explicitly modifying its source code. They are typically denoted by the `@` symbol followed by the decorator function name, placed just before the function definition."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc048e"
+  },
+  "id": 6,
+  "question": "Explain the concept of 'duck typing' in Python.",
+  "answer": "**Duck typing** is a programming style that doesn't look at an object's type to determine if it can be used for a particular purpose. Instead, it checks for the presence of the required methods or attributes. The concept comes from the saying: 'If it walks like a duck and it quacks like a duck, then it must be a duck.'"
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc048f"
+  },
+  "id": 7,
+  "question": "What is a 'generator' and how is it different from a normal function?",
+  "answer": "A **generator** is a function that returns an **iterator** that can be iterated over (one item at a time). It is defined using the `yield` keyword instead of `return`. The key difference is that generators maintain their local state between successive calls, allowing them to pause and resume execution, which is memory efficient for large datasets."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc0490"
+  },
+  "id": 8,
+  "question": "How do you handle exceptions in Python?",
+  "answer": "Exceptions are handled using the **`try...except`** block. Code that might raise an exception is placed inside the `try` block, and the code to handle the exception is placed inside the `except` block. Optional blocks include `else` (runs if no exception occurred) and `finally` (runs regardless of an exception)."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc0491"
+  },
+  "id": 9,
+  "question": "What is the Global Interpreter Lock (GIL) in Python?",
+  "answer": "The **GIL** is a mutex (mutual exclusion lock) that protects access to Python objects, preventing multiple native threads from executing Python bytecodes *at once*. This means Python's standard interpreter (CPython) is generally not thread-safe for CPU-bound tasks, even on multi-core machines, effectively making it single-threaded for execution."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc0492"
+  },
+  "id": 10,
+  "question": "How does Python manage memory?",
+  "answer": "Python's memory management is handled by a private heap containing all Python objects and data structures. It uses a built-in **garbage collector** to automatically reclaim memory and an **reference counting** mechanism to track object usage and deallocate objects when their reference count drops to zero."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc0493"
+  },
+  "id": 11,
+  "question": "What is a dictionary in Python? How is it ordered?",
+  "answer": "A **dictionary** is an unordered (pre-Python 3.7) or ordered (Python 3.7+) collection of data stored in **key-value** pairs. Keys must be unique and immutable, while values can be any data type."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc0494"
+  },
+  "id": 12,
+  "question": "What are 'set' data structures and when would you use them?",
+  "answer": "A **set** is an unordered collection of **unique** and **immutable** elements. They are primarily used for fast membership testing (checking if an element is in the set), removing duplicate entries from a sequence, and performing mathematical set operations like union, intersection, and difference."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc0495"
+  },
+  "id": 13,
+  "question": "What is list comprehension? Provide a simple example.",
+  "answer": "**List comprehension** is a concise way to create lists. It consists of brackets containing an expression followed by a `for` clause, and then zero or more `for` or `if` clauses. Example: `squares = [x**2 for x in range(10)]`."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc0496"
+  },
+  "id": 14,
+  "question": "Explain the difference between `range()` and `xrange()`.",
+  "answer": "In Python 2, `range()` returns an actual **list**, consuming memory for all values. `xrange()` returns a **generator object** (an iterator), generating values one at a time, which is more memory-efficient. In Python 3, `range()` behaves like Python 2's `xrange()`."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc0497"
+  },
+  "id": 15,
+  "question": "What is the purpose of the `__init__` method?",
+  "answer": "The `__init__` method is a special method (a constructor) that is automatically called when a new instance of a class is created. Its purpose is to **initialize** the attributes of the newly created object."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc0498"
+  },
+  "id": 16,
+  "question": "Differentiate between instance, class, and static methods.",
+  "answer": "**Instance methods** take `self` and operate on instance data. **Class methods** take `cls` (the class itself) and operate on class data (using `@classmethod`). **Static methods** take neither `self` nor `cls` and are bound to the class but cannot modify class or instance state (using `@staticmethod`)."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc0499"
+  },
+  "id": 17,
+  "question": "What is method overloading and overriding?",
+  "answer": "**Overriding** is when a subclass provides a specific implementation for a method that is already defined in its parent class. Python **does not support method overloading** in the traditional sense (multiple methods with the same name but different signatures); instead, it uses default argument values or variable arguments."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc049a"
+  },
+  "id": 18,
+  "question": "How do you achieve 'encapsulation' in Python?",
+  "answer": "Encapsulation is achieved by making instance variables **private**. While Python doesn't enforce strict access control, the convention is to prefix a variable name with a **single underscore (`_`)** for 'protected' access, or a **double underscore (`__`)** for 'name mangling', which makes it harder (but not impossible) to access directly from outside the class."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc049b"
+  },
+  "id": 19,
+  "question": "Explain the use of the `super()` function.",
+  "answer": "The **`super()`** function is used to call methods from the parent or sibling class in a class hierarchy. It is most commonly used inside the `__init__` method of a subclass to ensure the parent class's `__init__` method is called to correctly initialize its attributes."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc049c"
+  },
+  "id": 20,
+  "question": "What is the difference between shallow copy and deep copy?",
+  "answer": "A **shallow copy** creates a new object but inserts references to the original object's elements. If the elements are mutable (like lists inside a list), changes to those elements will affect both the original and the copied object. A **deep copy** creates a new object and recursively copies all objects found in the original, so the two are completely independent."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc049d"
+  },
+  "id": 21,
+  "question": "How do you open and close a file in Python?",
+  "answer": "You open a file using the **`open()`** function and close it using the file object's **`.close()`** method. The preferred and safer way is using the **`with open(...)`** statement, which automatically closes the file even if errors occur (Resource Management)."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc049e"
+  },
+  "id": 22,
+  "question": "What is the significance of the `if __name__ == '__main__':` block?",
+  "answer": "This block is executed only when the script is run directly (as the main program). If the script is imported as a module into another script, the code inside this block will **not** execute. It is used to separate code that should run on execution from reusable module code."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc049f"
+  },
+  "id": 23,
+  "question": "What is a Python module? Give an example.",
+  "answer": "A **module** is simply a file containing Python definitions and statements (e.g., functions, classes, variables). The file name is the module name with the `.py` extension. Example: **`math`** (provides mathematical functions) or **`os`** (provides operating system interaction functions)."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04a0"
+  },
+  "id": 24,
+  "question": "How do you install an external package/library in Python?",
+  "answer": "External packages are typically installed using **`pip`** (Python's package installer), which connects to PyPI (Python Package Index). The command is: **`pip install package_name`** (e.g., `pip install requests`)."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04a1"
+  },
+  "id": 25,
+  "question": "What is the difference between `==` and `is`?",
+  "answer": "**`==`** checks for **value equality** (if the objects have the same content). **`is`** checks for **identity** (if the two objects are actually the *same* object in memory). For immutable objects like small integers and strings, they can sometimes behave the same due to object caching."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04a2"
+  },
+  "id": 26,
+  "question": "What is a 'lambda' function?",
+  "answer": "A **lambda function** (or anonymous function) is a small, single-expression function that can take any number of arguments but can only have **one expression**. It is defined using the keyword `lambda`. Example: `add = lambda x, y: x + y`."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04a3"
+  },
+  "id": 27,
+  "question": "Explain 'closures' in Python.",
+  "answer": "A **closure** is a function object that remembers values in its enclosing scope even if those variables are no longer present in memory. It occurs when a nested function references a variable from its outer (non-global) scope."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04a4"
+  },
+  "id": 28,
+  "question": "What are 'iterators' and 'iterables'?",
+  "answer": "An **iterable** is any object capable of returning its members one at a time (e.g., lists, tuples, strings). An **iterator** is an object that represents a stream of data; it is an object with a `__next__` method that is called to retrieve the next item."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04a5"
+  },
+  "id": 29,
+  "question": "How do you use the `map()` function?",
+  "answer": "The **`map()`** function applies a given function to every item of an iterable (like a list) and returns a map object (an iterator). The general syntax is `map(function, iterable)`. Example: `list(map(str.upper, ['a', 'b']))`."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04a6"
+  },
+  "id": 30,
+  "question": "How do you use the `filter()` function?",
+  "answer": "The **`filter()`** function constructs an iterator from elements of an iterable for which a function returns true. It is used to selectively pull items from a sequence. The general syntax is `filter(function, iterable)`. Example: `list(filter(lambda x: x % 2 == 0, [1, 2, 3, 4]))`."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04a7"
+  },
+  "id": 31,
+  "question": "What is 'string formatting' in Python? Name three methods.",
+  "answer": "String formatting is the process of building a string by injecting variables or expressions into placeholders. Three common methods are: **1. C-style formatting (`%`), 2. The `format()` method, 3. F-strings (Formatted String Literals).**"
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04a8"
+  },
+  "id": 32,
+  "question": "Explain F-strings (Formatted String Literals).",
+  "answer": "**F-strings**, introduced in Python 3.6, provide a concise and readable way to embed expressions inside string literals. They are prefixed with the letter 'f' and use curly braces `{}` to contain the expression. Example: `f'My name is {name} and I am {age}.'`"
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04a9"
+  },
+  "id": 33,
+  "question": "What is a 'docstring' and why is it important?",
+  "answer": "A **docstring** is a string literal that occurs as the first statement in a module, class, function, or method definition. It provides a formal, easily accessible documentation of that code block. It's important because it's used by the `help()` function and documentation-generating tools."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04aa"
+  },
+  "id": 34,
+  "question": "How do you perform 'unit testing' in Python?",
+  "answer": "Python has a built-in module called **`unittest`** that supports unit testing. It requires creating a test class that inherits from `unittest.TestCase` and defining test methods that start with the prefix `test_`."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04ab"
+  },
+  "id": 35,
+  "question": "What is a 'virtual environment' and why use one?",
+  "answer": "A **virtual environment** is an isolated Python environment for a specific project. It allows you to install project-specific dependencies without interfering with the system-wide Python installation or other projects. This prevents version conflicts."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04ac"
+  },
+  "id": 36,
+  "question": "Explain 'type hinting' in Python.",
+  "answer": "**Type hinting** (PEP 484) is a way to indicate the expected data types for variables, function arguments, and return values. It does **not** enforce types at runtime (Python remains dynamically typed), but it helps developers, IDEs, and static analysis tools (like MyPy) detect potential type-related bugs."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04ad"
+  },
+  "id": 37,
+  "question": "What is the primary use case for the `collections.Counter` class?",
+  "answer": "The **`collections.Counter`** class is primarily used for **counting hashable objects**. It is a specialized dictionary subclass for counting the frequency of elements in an iterable, such as counting word frequency in a document or element frequency in a list."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04ae"
+  },
+  "id": 38,
+  "question": "How does `*args` and `**kwargs` work?",
+  "answer": "**`*args`** allows a function to accept a **variable number of non-keyword (positional) arguments**, which are received as a **tuple**. **`**kwargs`** allows a function to accept a ** variable number of keyword (named) arguments**, which are received as a **dictionary**."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04af"
+  },
+  "id": 39,
+  "question": "How is memory allocated and deallocated in Python?",
+  "answer": "Python uses a **private heap space** for all its data structures. Allocation is handled automatically by the memory manager. Deallocation is handled primarily through **Reference Counting** (when an object's reference count drops to zero, its memory is released) and a periodic **Garbage Collector** to resolve reference cycles."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04b0"
+  },
+  "id": 40,
+  "question": "What is 'serialization' and how is it done in Python?",
+  "answer": "**Serialization** (or marshalling) is the process of converting an object's state (e.g., a Python list or dictionary) into a stream of bytes so that it can be stored in a file or transmitted across a network. In Python, this is typically done using the built-in **`pickle`** module or the **`json`** module."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04b1"
+  },
+  "id": 41,
+  "question": "Explain the difference between `append()` and `extend()` for lists.",
+  "answer": "**`append()`** adds its argument as a **single element** to the end of the list, even if the argument is another list (resulting in a nested list). **`extend()`** iterates over its argument and adds **each element** to the list, effectively extending the list."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04b2"
+  },
+  "id": 42,
+  "question": "What is the difference between a `break` and a `continue` statement?",
+  "answer": "**`break`** immediately terminates the current loop (the loop is stopped entirely). **`continue`** skips the rest of the current iteration and immediately proceeds to the next iteration of the loop."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04b3"
+  },
+  "id": 43,
+  "question": "How do you swap two variables in a single line in Python?",
+  "answer": "Python allows for simultaneous assignment (Tuple packing/unpacking). Example: **`a, b = b, a`**. This is a highly idiomatic and efficient way to swap variables."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04b4"
+  },
+  "id": 44,
+  "question": "What is 'polymorphism' in Python OOP?",
+  "answer": "**Polymorphism** means 'many forms.' In Python, it allows objects of different classes to respond to the same method call (i.e., having a method with the same name across different classes), as long as they implement that method. Duck typing naturally supports polymorphism."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04b5"
+  },
+  "id": 45,
+  "question": "Explain the use of `try...except...else...finally`.",
+  "answer": "`try` executes the main code. `except` executes if an exception occurs in `try`. **`else`** executes **only if the `try` block completes without an exception**. **`finally`** always executes, regardless of whether an exception occurred or not, and is typically used for cleanup operations."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04b6"
+  },
+  "id": 46,
+  "question": "What is the difference between `del` and `remove()` for lists?",
+  "answer": "**`remove(value)`** deletes the **first occurrence of a specified value** from the list. **`del`** is a statement used to **delete an item at a specific index** (e.g., `del my_list[2]`) or to delete variables/slices entirely."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04b7"
+  },
+  "id": 47,
+  "question": "How do you access the current date and time in Python?",
+  "answer": "You use the built-in **`datetime`** module. To get the current date and time, you would typically use **`datetime.datetime.now()`**."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04b8"
+  },
+  "id": 48,
+  "question": "What are 'assert' statements used for?",
+  "answer": "The **`assert`** statement is used to insert debugging checks into a program. It tests a condition and immediately raises an **`AssertionError`** if the condition is false. They are generally disabled when running Python in optimized mode (`python -O`)."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04b9"
+  },
+  "id": 49,
+  "question": "How can you make a Python class iterable?",
+  "answer": "To make a class iterable, you need to define two special methods: **`__iter__`** (which should return an iterator object, typically `self`) and **`__next__`** (which should return the next item from the sequence and raise `StopIteration` when the sequence is exhausted)."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04ba"
+  },
+  "id": 50,
+  "question": "What is 'monkey patching'?",
+  "answer": "**Monkey patching** is the practice of dynamically modifying or extending the code of a module, class, or function at runtime (e.g., adding a new method to a class after it has been defined). It is generally frowned upon as it makes code harder to maintain."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04bb"
+  },
+  "id": 51,
+  "question": "How do you create a multiline string in Python?",
+  "answer": "Multiline strings are created using **triple quotes**, which can be single (`'''...'''`) or double (`\"\"\"...\"\"\"`). They are also commonly used for docstrings."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04bc"
+  },
+  "id": 52,
+  "question": "Differentiate between mutable and immutable data types.",
+  "answer": "**Mutable** objects (like lists, dictionaries, sets) can be modified after they are created. **Immutable** objects (like numbers, strings, tuples) cannot be changed after creation; any operation that appears to modify them actually creates a new object."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04bd"
+  },
+  "id": 53,
+  "question": "What is the role of the `__call__` method?",
+  "answer": "If a class defines the **`__call__`** method, its instances can be treated as functions. You can 'call' the object directly using parentheses, e.g., `obj(arg1, arg2)`. This is commonly used for decorators or creating function-like objects."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04be"
+  },
+  "id": 54,
+  "question": "What is 'descriptor' in Python?",
+  "answer": "A **descriptor** is an object that implements the 'descriptor protocol,' which consists of any of the `__get__`, `__set__`, or `__delete__` methods. Descriptors are the mechanism behind properties, methods, and class methods."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04bf"
+  },
+  "id": 55,
+  "question": "How do you convert a string to an integer?",
+  "answer": "You use the built-in **`int()`** constructor. Example: `number = int('123')`. If the string is not a valid integer representation, it will raise a `ValueError`."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04c0"
+  },
+  "id": 56,
+  "question": "What is the difference between `list.sort()` and `sorted(list)`?",
+  "answer": "**`list.sort()`** is a **method** that sorts the list **in-place** and returns `None`. **`sorted(iterable)`** is a built-in **function** that returns a **new sorted list** from any iterable, leaving the original iterable unchanged."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04c1"
+  },
+  "id": 57,
+  "question": "How can you implement a singleton pattern in Python?",
+  "answer": "A common way is by using a **decorator** or by overriding the **`__new__`** method (which is called before `__init__`) to control object creation and ensure only one instance of the class is ever created."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04c2"
+  },
+  "id": 58,
+  "question": "What is `typing.NamedTuple` and when should it be used?",
+  "answer": "A **`NamedTuple`** (from the `typing` module) is a simple way to create a tuple subclass with named fields and optional type hints. It should be used when you need a simple, immutable container for a fixed set of attributes, providing better readability than accessing by index."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04c3"
+  },
+  "id": 59,
+  "question": "Explain 'context managers' and the `with` statement.",
+  "answer": "**Context managers** are objects that define the methods **`__enter__`** and **`__exit__`**. The **`with`** statement guarantees that these methods are called correctly upon entering and exiting the context (e.g., a code block). This is primarily used for resource management, such as automatically closing files or database connections."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04c4"
+  },
+  "id": 60,
+  "question": "What is the purpose of the `pass` statement?",
+  "answer": "The **`pass`** statement is a **null operation**; nothing happens when it executes. It is used as a placeholder where a statement is syntactically required but you don't want any code to execute (e.g., in an empty function or class definition)."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04c5"
+  },
+  "id": 61,
+  "question": "What are the two main ways to perform concurrency in Python?",
+  "answer": "The two main ways are **1. Threading (using the `threading` module)**, which is suitable for I/O-bound tasks due to the GIL, and **2. Multiprocessing (using the `multiprocessing` module)**, which bypasses the GIL by using separate processes, making it suitable for CPU-bound tasks."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04c6"
+  },
+  "id": 62,
+  "question": "What is a `TypeError`?",
+  "answer": "A **`TypeError`** is raised when an operation or function is applied to an object of an inappropriate type (e.g., trying to add a string and an integer, or calling a method that doesn't exist on an object)."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04c7"
+  },
+  "id": 63,
+  "question": "What is the purpose of the `zip()` function?",
+  "answer": "The **`zip()`** function takes multiple iterables (like lists) and aggregates elements from each of them into an **iterator of tuples**. The $i$-th tuple contains the $i$-th element from each of the input iterables. It stops when the shortest iterable is exhausted."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04c8"
+  },
+  "id": 64,
+  "question": "How do you reverse a list in Python?",
+  "answer": "There are two main ways: 1. Using the **`list.reverse()`** method (reverses in-place and returns `None`). 2. Using **slicing** with a step of $-1$: **`my_list[::-1]`** (returns a *new* reversed list)."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04c9"
+  },
+  "id": 65,
+  "question": "What is a 'dictionary comprehension'?",
+  "answer": "Similar to list comprehension, **dictionary comprehension** is a concise way to create dictionaries. It consists of curly braces containing a key-value expression followed by a `for` clause. Example: `squares = {x: x**2 for x in range(5)}`."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04ca"
+  },
+  "id": 66,
+  "question": "How does an `import` statement find a module?",
+  "answer": "Python looks for the module in the directories listed in **`sys.path`**. This path includes (in order): **1. The directory of the current script, 2. Directories listed in the PYTHONPATH environment variable, 3. The standard library directories.**"
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04cb"
+  },
+  "id": 67,
+  "question": "Explain the use of `yield from`.",
+  "answer": "The **`yield from`** statement is used inside a generator function to delegate part of its operation to another generator (or any iterable). It is essentially a shortcut for iterating over the sub-generator and yielding its results."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04cc"
+  },
+  "id": 68,
+  "question": "What is the difference between an `AttributeError` and a `NameError`?",
+  "answer": "A **`NameError`** occurs when a variable or function is used but has not been defined (e.g., misspelling a variable name). An **`AttributeError`** occurs when you try to access an attribute or method that does not exist on a specific object (e.g., trying to call `list.append_item()`)."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04cd"
+  },
+  "id": 69,
+  "question": "How do you create and use a **Property** in a class?",
+  "answer": "A property is created using the **`@property`** decorator on a getter method. It allows you to access a method as if it were an attribute, often used to control access to instance variables and perform calculations or validation on retrieval/setting."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04ce"
+  },
+  "id": 70,
+  "question": "What are 'keyword-only' arguments?",
+  "answer": "**Keyword-only arguments** are function parameters that must be specified by their name when the function is called, not by position. They are defined by placing an asterisk (`*`) in the function definition before the parameter names. Example: `def func(a, *, b):` (here, `b` is keyword-only)."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04cf"
+  },
+  "id": 71,
+  "question": "Explain the purpose of the `functools.reduce()` function.",
+  "answer": "The **`reduce()`** function (from the `functools` module) applies a rolling computation (a function) to sequential pairs of values in a list (or other iterable). It 'reduces' the sequence to a single value. Example: finding the product of all elements in a list."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04d0"
+  },
+  "id": 72,
+  "question": "What are `defaultdict` and `OrderedDict`?",
+  "answer": "Both are special dictionary types in the `collections` module. A **`defaultdict`** automatically initializes a value (e.g., `0` or `[]`) for a key when you try to access it if it doesn't exist. An **`OrderedDict`** (mostly superseded by Python 3.7+ standard dicts) maintains the order in which items were inserted."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04d1"
+  },
+  "id": 73,
+  "question": "How does `os.walk()` work?",
+  "answer": "**`os.walk()`** is a generator function that recursively traverses a directory tree. For each directory in the tree, it `yield`s a 3-tuple: **(directory path, list of subdirectories, list of files)**."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04d2"
+  },
+  "id": 74,
+  "question": "What is a 'hashable' object in Python?",
+  "answer": "An object is **hashable** if it has a hash value that never changes during its lifetime (`__hash__` method) and can be compared to other objects (`__eq__` method). All immutable types (like tuples, strings, numbers) are hashable and can be used as **dictionary keys** or stored in a **set**."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04d3"
+  },
+  "id": 75,
+  "question": "What is the purpose of the `__slots__` attribute in a class?",
+  "answer": "**`__slots__`** is used to explicitly declare data members (instance variables) a class instance can have. When defined, it prevents the automatic creation of the instance dictionary (`__dict__`), resulting in **memory savings** and **faster attribute access** for classes with many instances."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04d4"
+  },
+  "id": 76,
+  "question": "Explain the concept of 'memoization'.",
+  "answer": "**Memoization** is an optimization technique used primarily to speed up computer programs by **caching** the results of expensive function calls and returning the cached result when the same inputs occur again. The `functools.lru_cache` decorator is commonly used for this in Python."
+},
+{
+  "_id": {
+    "$oid": "690194190f237e9cc8dc04d5"
+  },
+  "id": 77,
+  "question": "What is the difference between **`isinstance()`** and **`type()`**?",
+  "answer": "**`type(obj)`** returns the exact type of an object. **`isinstance(obj, class_or_tuple)`** checks if an object is an instance of a specified class or a subclass of that class (or any class in a tuple of classes). **`isinstance()`** is generally preferred in Python's duck-typing philosophy, as it respects inheritance."
+}]
