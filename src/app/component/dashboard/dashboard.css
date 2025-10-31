@@ -1,0 +1,60 @@
+/* Color Variables (Keep these for consistency) */
+:root {
+    /* ... (Your color variables) ... */
+}
+
+/* ==================================== */
+/* 1. BACKGROUND STYLES (Using your image) */
+/* ==================================== */
+
+/* Optional: Define a slow, subtle movement animation if you want the image to pan slightly */
+@keyframes image-pan {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 10% 10%; } /* Moves the image slightly */
+    100% { background-position: 0% 0%; }
+}
+
+.background-video {
+    /* Full-screen positioning */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    
+    /* Ensure the video covers the screen and scales correctly */
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    
+    /* Ensures the video is centered and maintains aspect ratio */
+    object-fit: cover; 
+    
+    /* Apply a dark overlay effect for text readability */
+    filter: brightness(0.5); /* Dramatically darkens the video */
+    opacity: 0.8; /* Makes it slightly transparent */
+}
+
+.dashboard-main {
+    /* ... (The rest of your dashboard-main styles) ... */
+    min-height: calc(100vh - 60px - 50px);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+/* ==================================== */
+/* 2. MAIN DASHBOARD STYLES (Keep the rest) */
+/* ==================================== */
+
+.dashboard-main {
+    /* ... (Keep the rest of the dashboard-main styles) ... */
+    min-height: calc(100vh - 60px - 50px);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+/* ... (Keep the rest of the dashboard styles: .dashboard-ui, .dashboard-header, etc.) ... */

@@ -1,0 +1,45 @@
+/* --- Header Styling --- */
+.main-header {
+    width: 100%;
+    background-color: #333; /* Dark background for contrast */
+    padding: 15px 0; /* Some vertical padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.header-content {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically (useful if you add more elements) */
+    max-width: 1200px; /* Optional: Limit width for very large screens */
+    margin: 0 auto; /* Centers the content container itself */
+}
+
+.header-content span {
+    color: #fff; /* White text for visibility */
+    font-size: 1.5em; /* Adjust size as needed */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* --- Background Image CSS (If you are still using this from the previous step) --- */
+.home-container {
+    background-image: url('../../../../public/BgImage.jpeg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.4); 
+    
+    /* Adjust padding for the home container if the header is now present */
+    padding-top: 50px; 
+}
+
+/* Ensure the welcome box text is clearly visible */
+.welcome-box {
+    /* Add styles to ensure the box itself is readable against the new full background */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
